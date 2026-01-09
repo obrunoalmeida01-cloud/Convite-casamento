@@ -5,8 +5,45 @@
 <meta charset="UTF-8">
 <title>Convite de Casamento - Bruno & Keren</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
+<style>.floral {
+    position: fixed;
+    width: 140px;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.floral.top-left {
+    top: 0;
+    left: 0;
+}
+
+.floral.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.floral.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+}
+
+.floral.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: scale(-1);
+}
+
+.recipiente {
+    position: relative;
+    z-index: 1;
+}
+    body {<img class="floral top-left" src="https://i.imgur.com/4ZQZ6bE.png">
+<img class="floral top-right" src="https://i.imgur.com/4ZQZ6bE.png">
+<img class="floral bottom-left" src="https://i.imgur.com/4ZQZ6bE.png">
+<img class="floral bottom-right" src="https://i.imgur.com/4ZQZ6bE.png">
         margin: 0;
         padding: 0;
         background-color: #f9f7f3;
@@ -71,7 +108,41 @@
         text-align: center;
         margin-top: 35px;
         font-size: 15px;
-    }
+   .floral {
+    position: fixed;
+    width: 140px;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.floral.top-left {
+    top: 0;
+    left: 0;
+}
+
+.floral.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.floral.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+}
+
+.floral.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: scale(-1);
+}
+
+/* Garante que o conteúdo fique acima das flores */
+.container, .recipiente {
+    position: relative;
+    z-index: 1;
+} }
 </style>
 </head>
 <body>
